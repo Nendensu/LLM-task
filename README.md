@@ -20,7 +20,7 @@
 
 1. Реализуйте функцию `forward(X, weights)`, возвращающую предсказания сети.
 2. Убедитесь, что ваш forward pass воспроизводит эталонные предсказания из файла `reference_predictions.npy` (предоставляется) с точностью до $10^{-5}$.
-3. Реализуйте функцию `compute_gradients(X, y, weights)`, возвращающую градиенты по всем параметрам.
+3. Реализуйте функцию `compute_gradients(X, y, weights)`, возвращающую градиенты по всем параметрам (`W1`, `b1`, `W2`, `b2`).
 4. Верифицируйте градиенты методом конечных разностей (finite difference check):
 
 $$\frac{\partial L}{\partial w_i} \approx \frac{L(w_i + \varepsilon) - L(w_i - \varepsilon)}{2\varepsilon}, \quad \varepsilon = 10^{-5}$$
